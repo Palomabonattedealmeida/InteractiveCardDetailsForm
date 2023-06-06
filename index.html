@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Cartão de Crédito Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card-images">
+            <img src="bg-card-front.png" alt="Cartão de Crédito Frente">
+            <img src="bg-card-back.png" alt="Cartão de Crédito Verso">
+        </div>
+        <div class="form-container">
+            <h2>Formulário de Cartão de Crédito</h2>
+            <form id="credit-card-form">
+                <input type="text" id="name" placeholder="Nome no cartão">
+                <input type="text" id="card-number" placeholder="Número do cartão">
+                <div class="expiry-date-container">
+                    <label for="expiry-month">Data de Vencimento:</label>
+                    <div class="expiry-inputs">
+                        <input type="text" id="expiry-month" placeholder="MM" maxlength="2">
+                        <span>/</span>
+                        <input type="text" id="expiry-year" placeholder="AA" maxlength="2">
+                        <input type="text" id="security-code" placeholder="Código de segurança">
+                        <p></p>
+                        <div class="button">                            
+                            <button>Confirmar</button>
+                    </div>
+                </div>                   
+                        </div>
+                
+                
+            </form>
+            <div id="message-container"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
