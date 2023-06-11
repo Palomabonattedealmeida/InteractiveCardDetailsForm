@@ -8,7 +8,6 @@ body {
 .container {
     display: flex;
     height: 100vh;
-    
 }
 
 .card-images {
@@ -25,6 +24,7 @@ body {
 .card-images img {
     width: 400px;
     margin-bottom: 20px;
+    margin-right: 20px;
 }
 
 .card-back-image {
@@ -36,6 +36,8 @@ body {
     padding: 20px;
     background-color: white;
     color: #4B0082;
+    
+
 }
 
 .form-container input[type="text"] {
@@ -71,11 +73,27 @@ body {
     margin-right: 5px;
 }
 
-.container-button {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 40px;
+.expiry-inputs button {
+    background-color:hsl(279, 75%, 52%);
+    color: #d3d3d3;
+    font-weight: 600;    
+    width: 600px;
+    height: 40px ;
+    margin-bottom: 10px;
+    opacity: 1;
+    transition:0.3s;
+    cursor:pointer       
+    
 }
+
+.expiry-inputs button:hover {
+
+    background: #621179;
+
+    opacity: 0.3s;
+}
+
+
 
 .form-container input[type="submit"] {
     background-color: #4B0082;
